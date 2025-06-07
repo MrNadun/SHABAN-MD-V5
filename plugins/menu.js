@@ -158,8 +158,8 @@ _________________________
 ➤ 👥 .join
 ➤ 👥 .invite
 ➤ 👥 .resetglink
-➤ 👥 .jid1
-➤ 👥 .gjid
+➤ 👥 .jid
+➤ 👥 .forward
 ➤ 👥 .removecountry 93/91/654/1
 ➤ 👥 .kickco 91/93/654/664
 _________________________
@@ -194,6 +194,8 @@ _________________________
 ➤ 👑 .owner || Public Use 
 ➤ 👑 .broadcast ×
 ➤ 👑 .siminfo || Bot User 
+➤ 👑 .sim || Bot User
+➤ 👑 .sim2 || Bot User 
 ➤ 👑 .ping || Public Use
 ➤ 👑 .speed || Public Use
 ➤ 👑 .fetch || Public Use
