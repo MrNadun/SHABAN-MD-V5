@@ -7,9 +7,15 @@
 </p>
 
 <div align="center">
+
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=⚡+SHABAN+MD+BETTER+OPTION;🔥+The+Most+Powerful+WhatsApp+Bot;💻+developed+by+MR+SHABAN;🚀+SHABAN-MD+V5+Solutions;🌈+Fast+⚡+Secure+🔒+Reliable+✅" alt="Typing Animation">
+</h1>
   
 [![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-9ACD32?style=big-square&logo=whatsapp)](https://whatsapp.com/channel/0029VazjYjoDDmFZTZ9Ech3O)
 </div>
+
+---------
 
  <p align="center"><img src="https://profile-counter.glitch.me/{SHABAN-MD}/count.svg" alt="MRSHABAN40 :: Visitor's Count" old_src="https://profile-counter.glitch.me/{MRSHABAN40}/count.svg" /></p>
 
@@ -21,7 +27,7 @@
 </p> 
 
 <p align="center">
-  <a href="https://github.com/MRSHABAN40/SHABAN-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v3.0.0-cyan.svg?style=for-the-badge&logo=aqua" /></a>
+  <a href="https://github.com/MRSHABAN40/SHABAN-MD"><img title="Release" src="https://img.shields.io/badge/Release-beta%20v5-cyan.svg?style=for-the-badge&logo=aqua" /></a>
 </p>
 
 
@@ -120,23 +126,32 @@ jobs:
 
 ## 🗃️ _PROJECT ARCHITECTS_
 <div align="center">
+  <!-- Glowing Header -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
   <a href="https://github.com/MRSHABAN40">
     <img src="https://github-readme-stats.vercel.app/api?username=MRSHABAN40&show_icons=true&theme=dark&border_color=00ffff&title_color=00ffff&icon_color=00ffff" width="400"/>
   </a>
 </div>
+<!-- Glowing Header -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+</p>
 
 ## 🤖 _SHABAN-MD STATUS_
 
 ```diff
 + Project Status: Active
-! Version: 3.0.0 Neon Edition
-# License: MIT
+! Version: V.5 Neon Edition
+# License: BSD 3-Clause
 ```
 
 
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-  </div>
+<h3 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=FFFFFF&background=000000&center=true&vCenter=true&width=600&lines=💎+SHABAN+MD+Quality+Edition+by+MR+SHABAN;⚡+The+Future+of+WhatsApp+Bots+is+Here" alt="Footer Animation">
+</h3>
 
 
 <h1> ℕ𝕆 𝕃𝕆𝕍𝔼 💔 ℕ𝕆 𝕊𝕋ℝ𝔼𝕊𝕊 <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="45"> </h1>

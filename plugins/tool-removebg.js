@@ -6,12 +6,12 @@ const path = require("path");
 const { cmd } = require("../command");
 
 cmd({
-  pattern: "remini",
-  alias: ["enhance", "hd", "clair"],
-  react: '✨',
-  desc: "Enhance photo quality using Remini AI",
+  pattern: "removebg",
+  alias: ["rmbg", "nobg", "transparentbg"],
+  react: '🖼️',
+  desc: "Remove background from an image",
   category: "utility",
-  use: ".remini [reply to image]",
+  use: ".removebg [reply to image]",
   filename: __filename
 }, async (client, message, { reply, quoted }) => {
   try {
@@ -35,7 +35,7 @@ cmd({
     }
 
     // Create temp file
-    const tempFilePath = path.join(os.tmpdir(), `remini_input_${Date.now()}${extension}`);
+    const tempFilePath = path.join(os.tmpdir(), `removebg_${Date.now()}${extension}`);
     fs.writeFileSync(tempFilePath, mediaBuffer);
 
     // Upload to Catbox
@@ -54,34 +54,30 @@ cmd({
       throw "Failed to upload image to Catbox";
     }
 
-    // Enhance image using Remini API
-    const apiUrl = `https://apis.davidcyriltech.my.id/remini?url=${encodeURIComponent(imageUrl)}`;
-    const response = await axios.get(apiUrl, { 
-      responseType: 'arraybuffer',
-      timeout: 60000 // 1 minute timeout
-    });
+    // Remove background using API
+    const apiUrl = `https://apis.davidcyriltech.my.id/removebg?url=${encodeURIComponent(imageUrl)}`;
+    const response = await axios.get(apiUrl, { responseType: 'arraybuffer' });
 
     // Check if response is valid image
-    if (!response.data || response.data.length < 100) {
+    if (!response.data || response.data.length < 100) { // Minimum size check
       throw "API returned invalid image data";
     }
 
-    // Save enhanced image
-    const outputPath = path.join(os.tmpdir(), `remini_output_${Date.now()}.jpg`);
+    // Save processed image
+    const outputPath = path.join(os.tmpdir(), `removebg_output_${Date.now()}.png`);
     fs.writeFileSync(outputPath, response.data);
 
-    // Send the enhanced image with loading message
-    await reply("🔄 Enhancing image quality...");
+    // Send the processed image
     await client.sendMessage(message.chat, {
       image: fs.readFileSync(outputPath),
-      caption: "✅ Image enhanced successfully! SHABAN-MD",
+      caption: "Background removed successfully! SHABAN-MD",
     }, { quoted: message });
 
     // Clean up
     fs.unlinkSync(outputPath);
 
   } catch (error) {
-    console.error('Remini Error:', error);
-    await reply(`❌ Error: ${error.message || "Failed to enhance image. The image might be too large or the API is unavailable."}`);
+    console.error('RemoveBG Error:', error);
+    await reply(`❌ Error: ${error.message || error}`);
   }
 });
